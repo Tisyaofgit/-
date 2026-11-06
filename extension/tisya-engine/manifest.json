@@ -1,0 +1,11 @@
+{
+  "display_name": "缇斯亚 · 引擎与回合记忆",
+  "loading_order": 50,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Tisya",
+  "version": "1.0.0",
+  "generate_interceptor": "tisyaEngineBeforeGenerate"
+}

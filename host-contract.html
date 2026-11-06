@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>缇斯亚 · 宿主契约试验台</title><link rel="stylesheet" href="/extension/tisya-engine/style.css"><style>:root{color-scheme:dark;--SmartThemeBodyColor:#e3e8f1;--SmartThemeBorderColor:#39435c}body{font:16px/1.6 system-ui;background:#111726;color:#e3e8f1;max-width:1120px;margin:32px auto;padding:0 20px}h1{font-size:28px}small,p{color:#aebbd1}main{display:grid;grid-template-columns:1fr 1fr;gap:24px}textarea,input,select{box-sizing:border-box;background:#1b253a;color:#eef3fa;border:1px solid #425170;border-radius:6px;padding:8px;font:inherit}textarea{width:100%;min-height:230px;font:14px/1.5 monospace}button{background:#293c5c;color:#edf2fa;border:1px solid #4a668b;border-radius:6px;padding:8px 12px;cursor:pointer;margin:4px}.chat-row{border:1px solid #39435c;border-radius:8px;padding:12px;margin:8px 0;overflow-wrap:anywhere}.chat-row pre{white-space:pre-wrap;font-size:12px}.muted{color:#9baac0;font-size:13px}#host-log{white-space:pre-wrap;color:#ffc776}@media(max-width:760px){main{grid-template-columns:1fr}}</style><h1>宿主契约试验台</h1><p>这里模拟酒馆的上下文与消息事件，实际调用同包 Python 引擎。用于检查交互、结算和回退；不能代替真实 SillyTavern 或模型联调。练习数据独立保存。</p><main><section><h2>模拟聊天</h2><div><button id="new-practice">新练习</button><button id="send">新增回复</button><button id="swipe">重骰最后回复</button><button id="edit">编辑首条回复</button><button id="delete">删除最后回复</button></div><label for="reply">待结算的完整回复</label><textarea id="reply"><reply><body>1. 林舟拿起草药。
+
+4、他吃下草药，向前走了两步。</body><cells>@ACT: USE(actor, 草药×1) | P99
+wrong.field: +1 | P2</cells></reply></textarea><div id="host-log" role="status"></div><div id="chat"></div></section><aside><h2>实际插件设置</h2><div id="extensions_settings2"></div></aside></main><script type="module">
+import {indexedStorage,chatKey,makeUid,NS} from '/extension/tisya-engine/core.mjs';
+const storage=indexedStorage(indexedDB),handlers=new Map();
+const eventTypes=Object.fromEntries(['MESSAGE_RECEIVED','MESSAGE_EDITED','MESSAGE_DELETED','MESSAGE_SWIPED','MESSAGE_SWIPE_DELETED','GENERATION_ENDED','GENERATION_STOPPED','CHAT_CHANGED'].map(x=>[x,x.toLowerCase()]));
+let persisted=JSON.parse(localStorage.getItem('tisya-contract-host')??'null');
+const ctx={chatId:'contract-practice',characterId:'contract-only',name1:'练习用户',chat:persisted?.chat??[],chatMetadata:persisted?.meta??{},extensionSettings:{[NS]:{endpoint:location.origin,mode:'packet'}},eventTypes,eventSource:{on:(n,f)=>{if(!handlers.has(n))handlers.set(n,[]);handlers.get(n).push(f);}},saveSettingsDebounced:()=>{},saveMetadata:async()=>persist(),saveChat:async()=>{persist();render();},setExtensionPrompt:(key,value)=>{ctx.extensionPrompts[key]={value};},extensionPrompts:{},registerMacro:()=>{}};
+window.SillyTavern={getContext:()=>ctx};function persist(){localStorage.setItem('tisya-contract-host',JSON.stringify({chat:ctx.chat,meta:ctx.chatMetadata}));}
+async function reset(){const r=await fetch('/api/demo').then(r=>r.json());ctx.chat=[];ctx.chatMetadata[NS]={chat_uid:'contract-'+makeUid(),owner_chat_key:chatKey(ctx),enabled:true};await storage.set(ctx.chatMetadata[NS].chat_uid,{state:r.state,journal:{entries:[],revision_by_uid:{},scope:r.state.runtime.scope},local_revision:1});persist();render();}
+if(!ctx.chatMetadata[NS])await reset();
+await import('/extension/tisya-engine/index.js');
+async function emit(name,...args){for(const f of handlers.get(eventTypes[name])??[])await f(...args);persist();render();}
+function render(){const parent=document.querySelector('#chat');parent.replaceChildren();ctx.chat.forEach((m,i)=>{const div=document.createElement('div');div.className='chat-row';const title=document.createElement('strong');title.textContent='第'+(i+1)+'楼 · '+(m.extra?.[NS]?.uid??'待标识');const pre=document.createElement('pre');pre.textContent=m.mes;div.append(title,pre);parent.append(div);});}
+async function act(fn){try{await fn();document.querySelector('#host-log').textContent='事件处理完成；结算和警告见右侧。';}catch(e){document.querySelector('#host-log').textContent=e.message;}}
+const text=()=>document.querySelector('#reply').value;
+document.querySelector('#new-practice').onclick=()=>act(async()=>{await reset();await emit('CHAT_CHANGED');});
+document.querySelector('#send').onclick=()=>act(async()=>{ctx.chat.push({mes:text(),is_user:false,extra:{}});await emit('MESSAGE_RECEIVED',ctx.chat.length-1,'normal');});
+document.querySelector('#swipe').onclick=()=>act(async()=>{if(!ctx.chat.length)throw Error('先新增一条回复。');ctx.chat.at(-1).mes=text();await emit('MESSAGE_SWIPED',ctx.chat.length-1);});
+document.querySelector('#edit').onclick=()=>act(async()=>{if(!ctx.chat.length)throw Error('先新增一条回复。');ctx.chat[0].mes=text();await emit('MESSAGE_EDITED',0);});
+document.querySelector('#delete').onclick=()=>act(async()=>{ctx.chat.pop();await emit('MESSAGE_DELETED',ctx.chat.length);});
+render();
+</script></html>
