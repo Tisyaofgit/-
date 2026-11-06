@@ -1,0 +1,12 @@
+{
+  "display_name": "缇斯亚 · 会话与叙事",
+  "loading_order": 51,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "hooks": {"chatSurface": "registerChatSurface"},
+  "author": "Tisya",
+  "version": "0.1.0",
+  "minimum_client_version": "1.19.0"
+}
