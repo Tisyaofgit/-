@@ -1,5 +1,6 @@
 import {scopeOf,nativeStore,copy} from './services.mjs';
 import {composeCreativeRequest,assertRevisionTarget,candidateState} from './creative.mjs';
+import {prepareWorkspaceBinding} from './workspace-binding.mjs';
 export async function createHost(global=globalThis){
   const tt=global.__TAURITAVERN__;if(!tt?.api?.extension?.store)throw Error('需要提供 extension.store 的现行 TauriTavern；没有启动旧存储回退。');
   await tt.ready;
@@ -9,12 +10,7 @@ export async function createHost(global=globalThis){
   const host={
     context:ctx,scope:()=>scopeOf(ctx()),store:nativeStore(tt.api.extension.store),
     async prepareWorkspace(){
-      const c=ctx();if(!c.chatId)return;
-      const old=c.chatMetadata.tisya_chat,key=scopeOf(c);
-      if(old?.integrity===c.chatMetadata.integrity&&old?.key)return;
-      const parent=old?.key??(c.chatMetadata.main_chat?JSON.stringify([c.groupId?'group':'character',c.groupId??c.characters[c.characterId]?.avatar,c.chatMetadata.main_chat]):null);
-      c.chatMetadata.integrity??=crypto.randomUUID();
-      c.chatMetadata.tisya_chat={key,integrity:c.chatMetadata.integrity,parent};await c.saveMetadata();
+      return prepareWorkspaceBinding(ctx());
     },
     workspaceParent:key=>key===host.scope()?ctx().chatMetadata.tisya_chat?.parent:null,
     cards:()=>ctx().characters.map((c,id)=>({id,name:c.name,avatar:c.avatar})),
