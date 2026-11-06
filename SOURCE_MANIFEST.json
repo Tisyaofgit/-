@@ -1,0 +1,435 @@
+{
+  "format": "tisya.release-source-manifest.v1",
+  "created_utc": "2026-11-06T09:10:52.157433+00:00",
+  "self_excluded": "SOURCE_MANIFEST.json",
+  "file_count": 61,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 43,
+      "sha256": "031658de549c6344f3b03291bfcf16d7d9136c7e35e8b6d30be2a284f9ac1882",
+      "git_blob_sha1": "54a10b3ac78df2219c4cf918cb7c9c39becbe743",
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3435,
+      "sha256": "f7d03870ba8edb71495a50556e992b7a49254521cc3d421a2a07f133d578b88a",
+      "git_blob_sha1": "ff2fcd4352fade7eca81d1af45b96b663cdbe3ed",
+      "mode": "100644"
+    },
+    {
+      "path": "backend-panel/index.html",
+      "bytes": 2629761,
+      "sha256": "8ae684f22be10a648ae85b83b9bb1a459921760bac3e41f96d8cf49662cbb429",
+      "git_blob_sha1": "6ea07592d082b916b8fe5850b4cc04a563f447e6",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/NotoSerifSC-OFL.txt",
+      "bytes": 4350,
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "git_blob_sha1": "94d1bf7b52481343e2983fb7751e8b7abe1ea07b",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/NotoSerifSC-Regular.woff",
+      "bytes": 8527324,
+      "sha256": "9242b2ccca3789934ea862646cba8adaeea3749da4562c13c5ebab657b780413",
+      "git_blob_sha1": "dc216a770fb6ab1966e0952912754020b0734099",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/THIRD_PARTY_LICENSES.txt",
+      "bytes": 1651,
+      "sha256": "8bb2b36e35e567b7159d10833213820cef5f7b4091c868fe1a07ea618f9a6608",
+      "git_blob_sha1": "3067a0c479d85af784fc96feb730c33c5e84dac5",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/dedication.webp",
+      "bytes": 18124,
+      "sha256": "ff6757b4fd92d35dbc34c214875d5ab103929a7d9a1ad9b5e03635a815956395",
+      "git_blob_sha1": "bc6508501de836babe01a3d7104df100bc7d7c9f",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/female-water.webp",
+      "bytes": 818554,
+      "sha256": "237d16492f18f3d561c29b1048f3f4a27a1854e9a67a2fa0664c6c90a494bd47",
+      "git_blob_sha1": "b65a0f1d07b29e6edfaeef06d36c459deb485fbe",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/male-water.webp",
+      "bytes": 850922,
+      "sha256": "29cbadf4bbab7f240d1f81dbb704525f23aea3c663360e0575a59df9c33f657f",
+      "git_blob_sha1": "19116cdc5646ba2bf202875b64e8b60ec389ab1b",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/quiet-water.webp",
+      "bytes": 75808,
+      "sha256": "8bf736a5f216b5469b6b921f714d19d448f030229db08b6b09087e709697d27e",
+      "git_blob_sha1": "a093bd241a5291736e779bc1e7b8974aad313581",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/tailwindcss.min.js",
+      "bytes": 260500,
+      "sha256": "3573a896869009f2ab0ea9870ba0279cb8bda0dd45d710a83950367d19ee7ea9",
+      "git_blob_sha1": "a20afb5615fc7e33c12f20bfb9d0e345d18c1078",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/vue-router.global.prod.js",
+      "bytes": 26463,
+      "sha256": "2d9f4a1458046c78e30f513a65487c5bfa4b66a4424df74c96d0edf2b44bd1f6",
+      "git_blob_sha1": "ade038ad0aaaa37441c722307c9219bc18fa5fb1",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/assets/vue.runtime.global.prod.js",
+      "bytes": 113828,
+      "sha256": "8049c0eeb4349083b3e84f2875dbd23fc0ed96bbb32bce98e52156397120acee",
+      "git_blob_sha1": "0435607a725f53eb5ee8dec7ab629c5a930914d3",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/configuration.mjs",
+      "bytes": 4072,
+      "sha256": "f3ad43eeadff57a58b1a0b2ed5b4f2769e2b072cc8abfcb65dcafa849dd4a607",
+      "git_blob_sha1": "da0edb48ba6ff7417053386dd008387eafbcda00",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/creative.mjs",
+      "bytes": 4637,
+      "sha256": "b01a9900d925f516edc57cb0d418229854832fbc1a6b502bcff0b2634a19bb90",
+      "git_blob_sha1": "50634ccd6ab7303faafc7fa7601a3743efa1614c",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/default-preset.json",
+      "bytes": 106019,
+      "sha256": "1a347f5010a59e5e7b6d3515d13593e23bd9c5c9707a96e27e9abf7b13d5e958",
+      "git_blob_sha1": "60571360d13748b5afb5cf63563521e9ca66fe0c",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/editors.mjs",
+      "bytes": 6012,
+      "sha256": "d7789cf52b6102d83090cc19dda3536c5bd101c7ff976142a879bf52e17240cd",
+      "git_blob_sha1": "0a35ae975d1836a4753007f688160982ba1dec69",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/frontend.mjs",
+      "bytes": 8935,
+      "sha256": "0ae1827d2ebbc53699a95521711be364412ecdaa3783e2853398d121507bcdcc",
+      "git_blob_sha1": "b07525dac6cf2d4f380a38012102c26118e87947",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/host.mjs",
+      "bytes": 9232,
+      "sha256": "cf9a7dd3fe924fdd11bd7c717b3e3df7b895be04c56e6ef595f542d59e25c44d",
+      "git_blob_sha1": "199d62f7b00d07117fdc0b4374edf2a15ade0d38",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/index.js",
+      "bytes": 5282,
+      "sha256": "5fce6d57cb5ebcdeb7ded17ab0619a876e168c64659b0c23d3b5138425d2e1e9",
+      "git_blob_sha1": "dfe433ce47493645253325c25eba5b6d1a44e1fc",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/manifest.json",
+      "bytes": 286,
+      "sha256": "547bfd7572d65be96f6f8fab65ab45144c6aa23693482981639db3d0a29aa8c4",
+      "git_blob_sha1": "dfdb9478b8fb364322f678cbf0c4273e306e6381",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/narrative-schema.json",
+      "bytes": 20527,
+      "sha256": "4905bb20b4752995e091e1b4b1241d6fa35f58f2414bb94f6f74c1beff60be01",
+      "git_blob_sha1": "a89639d8ae93810aabbace543f136e772de0c004",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/projection.mjs",
+      "bytes": 2792,
+      "sha256": "2e4c2ecedf21d5305356e6e577d406db858b3d89eb1d4c9e6b6631a11fced367",
+      "git_blob_sha1": "867af06dd12329ff1a1d2ee00f467b2444b5ce62",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/services.mjs",
+      "bytes": 6557,
+      "sha256": "053dc2995cea18ff5c6663126b1301fb0d9ee2b71cd9054f3468953c0c0d95e1",
+      "git_blob_sha1": "b5c97473ca5ff9ddc6dd68f928f86bc3ef6f01ff",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/style.css",
+      "bytes": 9478,
+      "sha256": "1d194bbec886d2237242d49011f92b6af1f41c4e908cf814fa0ec2e54f4486a5",
+      "git_blob_sha1": "a1eeac5ba1ccf88b7e5430018cf8f2b3608452e1",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-chat/ui.mjs",
+      "bytes": 21843,
+      "sha256": "5d3d4854615e0717d14171f9431f74e95fbcb34da20c82f0aa101e96cbcd0da0",
+      "git_blob_sha1": "c6b20fdca400708dc5e1d65081987f613c4c1d48",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-engine/core.mjs",
+      "bytes": 11261,
+      "sha256": "47af26b68b9d853b47e1bc4fbbced938c4b48d6d73255eb6ce83ed9ae16ab65e",
+      "git_blob_sha1": "06e799c69badeef655d61409bc4e3515d136513f",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-engine/index.js",
+      "bytes": 8242,
+      "sha256": "64038c3864c7c32356f5fec338d285b886eaa36562a729134f58eb764af90281",
+      "git_blob_sha1": "52cea46e0aa05591476a603512ac382486c99f26",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-engine/manifest.json",
+      "bytes": 258,
+      "sha256": "41bc2ef92967dc9010bfbf818cac7b32956b7d9ab0b775a014ce3500da3d3158",
+      "git_blob_sha1": "be8057379e278f2f366e51fe6980ca0d040fe12d",
+      "mode": "100644"
+    },
+    {
+      "path": "extension/tisya-engine/style.css",
+      "bytes": 745,
+      "sha256": "13003bbee835e057cf19825ad0c996df6877722669e3a19c787bf064a1d457ae",
+      "git_blob_sha1": "a0a0992280ce828d1196a66015230bbd3b8a9f4f",
+      "mode": "100644"
+    },
+    {
+      "path": "host-contract.html",
+      "bytes": 5261,
+      "sha256": "e2479d34d6efb707c92fc365aae8974d6073521f4b1a22798da44626d840eb8a",
+      "git_blob_sha1": "a5be4ce70ae0535d0dd727c3f432adc854057f62",
+      "mode": "100644"
+    },
+    {
+      "path": "index.js",
+      "bytes": 201,
+      "sha256": "69f92a7c12f85e843e5f3c5e2ee01f9c1212b008a98f6d1ff5eb992c65cf5969",
+      "git_blob_sha1": "0cda006d1fba81c3d5a13287b108149c1229d960",
+      "mode": "100644"
+    },
+    {
+      "path": "launch_panel.py",
+      "bytes": 11883,
+      "sha256": "c8db6bd9219e20d0fa9ba33e866d6b591b72cb1cb299ae0ea07fddc6df5c76ff",
+      "git_blob_sha1": "b4019657df55bf748964bbba5c11553c173d1271",
+      "mode": "100644"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 392,
+      "sha256": "a7b7a4faf21e48552df4d34892f0a7d3e0a14b08153b1cf1998b16ec590a4fbd",
+      "git_blob_sha1": "0c199e0b4624ec264d1aec5c5ea07cd102eab5ac",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/catalog.json",
+      "bytes": 9328911,
+      "sha256": "8654d66bf3a6241d4acee0b724534a0fb4bc46e37e219109704038b0fdf200f9",
+      "git_blob_sha1": "11d91c6d69cf96055f2e355ad148011d684d1d13",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/chat_journal.py",
+      "bytes": 7992,
+      "sha256": "db52b3779dd8ec76aa9cff265a129880f67ee96a5f47b1361cc8ee9c1fffb24c",
+      "git_blob_sha1": "f8cec4c9b0b36bb9aa93c6a74053d71870acb8bf",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/domain_nodes.py",
+      "bytes": 7976,
+      "sha256": "3745a4930be412373ed5036512a455efcb8e248746b2916eda6237321d51b7e8",
+      "git_blob_sha1": "56734df4aaedb15d567058d2ae6023b8063b21cc",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/legacy_operator.mjs",
+      "bytes": 915,
+      "sha256": "dc578e667953bef5f5ae348edbc82689ec2168169d0d222c9eee6b11eabda166",
+      "git_blob_sha1": "5f62631360bef9cfb221a877b889e6e4af863560",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/llm_commands.py",
+      "bytes": 8414,
+      "sha256": "4afbb5096d19fc71c5e01f4cdeebdf774f64a75eaeabb6d51f9fee6304c332bf",
+      "git_blob_sha1": "6d427fca2d63f464a0a94708c1ccf91431a9da1e",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/material_text.py",
+      "bytes": 9244,
+      "sha256": "5b1d5024cd7ce4d0b9870c99e6873fa318015d3314915d66f8aca0227377c48d",
+      "git_blob_sha1": "6d9a0107a06cfe092748d1b49b97184c3a55616f",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/matrix_io.py",
+      "bytes": 22001,
+      "sha256": "63598b47feeae1d3ec52c25d4ca3fca19fa04273c172fc2c5be01758dff71206",
+      "git_blob_sha1": "106b7518e0e45ab6bd811b371e9cba2564115197",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/mechanical_adapter.py",
+      "bytes": 2795,
+      "sha256": "40a140dfdf7d1b7de3711822cf4d7a1d892552e8e94f3ec26d3a91be43d8518c",
+      "git_blob_sha1": "a48f032fddcf14326b860232dbb2979fce836daf",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/mechanical_runtime.mjs",
+      "bytes": 97721,
+      "sha256": "a2b9db406ce956ecabf11568d0cdc452015ae960893c6481760212d6846fbf4b",
+      "git_blob_sha1": "ccfbe0b67dfcb1f26db41f3f1f4ca77290160582",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/persona_bridge.py",
+      "bytes": 2046,
+      "sha256": "e9ef0c6c995fbabd9ba017dda5cf72d4414013df7d317ea0053ca40806e33912",
+      "git_blob_sha1": "52b7798b62e9f2617d90950ab1996951f402730d",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/reply_memory.py",
+      "bytes": 19079,
+      "sha256": "44702298fee698fa897f43923ad66878e501b00a5eba68e3a08aab6fd7f116fe",
+      "git_blob_sha1": "379ea1beb3ddacb97831e559c4d697bc0019b99e",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/rule_math.py",
+      "bytes": 11383,
+      "sha256": "7c6a82d2d0e0ec8141d61159fd59dd6fc0013663b85e3594deff3827c78a0c5f",
+      "git_blob_sha1": "0366836dc1810485025fbefb942d8a01840e882c",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/tisya.py",
+      "bytes": 7810,
+      "sha256": "3884e2228fefa7ca126596a1a89055c81c70dd4077bba4be0d0449c862787d25",
+      "git_blob_sha1": "8d9ba70f026ff9f76bbefcdc63d9d1d6d5e18e1b",
+      "mode": "100644"
+    },
+    {
+      "path": "matrix_engine_work/src/tisya_runtime.py",
+      "bytes": 46437,
+      "sha256": "16119858ddad86f314f91fd5884613106c3ded611d4811a9824bf416d4471521",
+      "git_blob_sha1": "76bb021919a8e8118998f22590b72b6bd8776e80",
+      "mode": "100644"
+    },
+    {
+      "path": "outputs/matrix_engine_rebuild/缇斯亚_二维多对象表单与附录.xlsx",
+      "bytes": 537238,
+      "sha256": "515184b4b9a74179828e0f151ff6f55f20ca3376b29c7f170ad1da325bb100f3",
+      "git_blob_sha1": "556811903779ae1272cdddc649892260bb878965",
+      "mode": "100644"
+    },
+    {
+      "path": "package.json",
+      "bytes": 132,
+      "sha256": "4976db8cdcc50781a43b18a9fa9851f13350e832c4976caefd69088dc5865379",
+      "git_blob_sha1": "4084bf80b4b358947428732f94d616c0f64acf53",
+      "mode": "100644"
+    },
+    {
+      "path": "plugin_server.py",
+      "bytes": 4341,
+      "sha256": "a7a3ca73e3c9de1fb86c47947e8fc95a147d6adc65996170fd34e17aa6fa7f15",
+      "git_blob_sha1": "35750fca9e0ee0e60f58c52d0a33b26948b63b3f",
+      "mode": "100644"
+    },
+    {
+      "path": "public/js/persona-model.js",
+      "bytes": 5094,
+      "sha256": "20c880401e2d85a8184c60f79576b61adf25de0ed3b9ba2a8651d37e029151e7",
+      "git_blob_sha1": "1f0f70611d88819981e08ccc962cd53e2196e554",
+      "mode": "100644"
+    },
+    {
+      "path": "publish-probe-20261106T090119Z.txt",
+      "bytes": 3,
+      "sha256": "dc51b8c96c2d745df3bd5590d990230a482fd247123599548e0632fdbf97fc22",
+      "git_blob_sha1": "9766475a4185a151dc9d56d614ffb9aaea3bfd42",
+      "mode": "100644"
+    },
+    {
+      "path": "release-validation.json",
+      "bytes": 1891,
+      "sha256": "c73241efad02baab005ec7a0daefefddc166d80c734d69678be44f584029acd1",
+      "git_blob_sha1": "c792718828e8fce9bb24aa0bc2ec18f16b382b69",
+      "mode": "100644"
+    },
+    {
+      "path": "start-engine.bat",
+      "bytes": 345,
+      "sha256": "50dca0dfeab57d8759c5c5129f3dbe098c0198ef6c8b1dae91ecc316dbab97da",
+      "git_blob_sha1": "7399065853f2ac54c7d07785a84bdf430160d55d",
+      "mode": "100644"
+    },
+    {
+      "path": "start-engine.sh",
+      "bytes": 258,
+      "sha256": "0006cff9fbf29a711b52f35b9d011a7e33aa2dd01e35d85e1181f26b38273051",
+      "git_blob_sha1": "9fb8648a1d1ba5fadc602c363d5180d8d17144a4",
+      "mode": "100755"
+    },
+    {
+      "path": "style.css",
+      "bytes": 100,
+      "sha256": "0c62d739ce5c64e64ae437a14e102c3f62d8202f90b522779a22904ee740a08a",
+      "git_blob_sha1": "464426998760450fccecc7d1ab565f8bac133d79",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/chat-services.test.mjs",
+      "bytes": 6360,
+      "sha256": "c640483db663266963e25ece39e1d79b657b92f473a7dca47bd5ad156d418535",
+      "git_blob_sha1": "0eac90300a3c730452ea12e6342299b1e5a6dd6b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/creative.test.mjs",
+      "bytes": 5287,
+      "sha256": "c6153c48a09e3f53012514e588f8e77eee612140de6eaf8d1f7d703a767b8f8f",
+      "git_blob_sha1": "e07296ce0c0e27de34de7ae7d6fbe869bb1edbbc",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release-engine-smoke.py",
+      "bytes": 2745,
+      "sha256": "7f2a37cac66f1e8686e6f251fd68ea6968bdfe329d99932006cbf09b06b55434",
+      "git_blob_sha1": "966c22ad234fabcf7a44f2fb5b106357060a4bc3",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/release-smoke.mjs",
+      "bytes": 2638,
+      "sha256": "56472a6bf0847ea9bfad83a975d1c2139d0772965969d925213fa5baff0ebeb5",
+      "git_blob_sha1": "ae540708f35d9b953a04dfadadd38bb951240202",
+      "mode": "100644"
+    }
+  ]
+}

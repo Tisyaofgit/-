@@ -1,0 +1,16 @@
+{
+  "display_name": "缇斯亚 · 重置版",
+  "loading_order": 50,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "hooks": {
+    "chatSurface": "registerChatSurface"
+  },
+  "generate_interceptor": "tisyaEngineBeforeGenerate",
+  "author": "Tisya",
+  "version": "0.1.0",
+  "minimum_client_version": "1.19.0",
+  "homePage": "https://github.com/Tisyaofgit/-"
+}

@@ -1,0 +1,62 @@
+{
+  "release": "0.1.0",
+  "checked_utc": "2026-11-06T09:10:52.157433+00:00",
+  "unit_tests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "distribution_loader": {
+    "kind": "simulated_host",
+    "modules": 12,
+    "chat_surface_hook": true,
+    "engine_bootstrap": true
+  },
+  "companion": {
+    "kind": "real_local_http",
+    "tables": 139,
+    "blank_state": true,
+    "reconcile": true,
+    "xlsx_export": true,
+    "cors": true,
+    "error_propagation": true,
+    "persona_node_process": true
+  },
+  "runtime": {
+    "python": "Python 3.12.14",
+    "node": "v24.22.1"
+  },
+  "previous_native_validation": {
+    "host": "Linux TauriTavern 2.4.0",
+    "helper": "4.11.3",
+    "scope": "The unchanged chat and engine modules were previously verified as separate extensions. This release adds a combined distribution entry."
+  },
+  "unverified": [
+    "combined package in real native host",
+    "external real model",
+    "Android",
+    "arbitrary third-party card scripts",
+    "Windows and macOS launchers"
+  ],
+  "test_harness_note": "First HTTP smoke attempt closed a large asset response after 1 byte, producing ConnectionResetError. Changed harness to read the complete response; the subsequent run passed without that error.",
+  "previous_release_verification_utc": "2026-11-06T06:50:48.405104+00:00",
+  "source_recovery": {
+    "verified_files": 239,
+    "mismatched_files": 0,
+    "source_code_changed": false,
+    "prepared_release_files_excluding_python_cache": 60
+  },
+  "static_resources": {
+    "status": "passed",
+    "references_checked": 36,
+    "vendor_virtual_stylesheets": [
+      "./theme.css",
+      "./preflight.css",
+      "./utilities.css"
+    ]
+  },
+  "republication": {
+    "minimal_write_test_commit": "80974aa02665832feabc0bbbfd8d6d5bfb740f7b",
+    "probe_remote_readback": "3 bytes matched local file",
+    "combined_native_host_checked_this_run": false
+  }
+}
